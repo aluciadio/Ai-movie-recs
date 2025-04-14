@@ -1,0 +1,63 @@
+h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 200px;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100px;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #f9ecec;
+  border-radius: 10px;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+form {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+a {
+  color: #a0bee0;
+}
+
+.instructions {
+  padding: 15px;
+  color: black;
+  width: 80%;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  border-radius: 10px;
+}
+
+.submit {
+  padding: 15px;
+  max-width: 20%;
+  border: none;
+  border-radius: 10px;
+  background-color: #c8d9eb;
+}
+
+.translation {
+  padding: 20px;
+  line-height: 25px;
+  font-size: 15px;
+  background-color: #f0d9da;
+  border-radius: 10px;
+}
