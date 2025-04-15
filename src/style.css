@@ -24,7 +24,6 @@ header {
 
 form {
   padding: 15px;
-  margin-bottom: 10px;
 }
 
 footer {
@@ -53,10 +52,19 @@ a {
   background-color: #d01257;
 }
 
+.hint {
+  font-size: 13px;
+  opacity: 0.6;
+  padding-bottom: 10px;
+}
 .movieRecs {
   padding: 20px;
   line-height: 25px;
   font-size: 15px;
   background-color: #fb90b7;
   border: 3px solid #0f1021;
+}
+
+.hidden {
+  display: none;
 }
