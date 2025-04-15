@@ -1,5 +1,4 @@
 function movieRecs(response) {
-  console.log("getting the recomendations");
   new Typewriter("#movieRecs", {
     strings: response.data.answer,
     autoStart: true,
@@ -17,13 +16,9 @@ function getRecs(event) {
   let prompt = `User instructions: ${instructionsInput.value}`;
   let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let movieRecs = document.querySelector("#movieRecs");
-  movieRecs.classList.remove("hidden");
-  movieRecs.innerHTML = "📝Getting your recomendations";
-
-  console.log("Thinking");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let movieRecsElement = document.querySelector("#movieRecs");
+  movieRecsElement.classList.remove("hidden");
+  movieRecsElement.innerHTML = "📝Getting your recomendations";
 
   axios.get(url).then(movieRecs);
 }
