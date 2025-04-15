@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css"></style>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI-ENGLISH-TRANSLATOR</h1>
-        <h2>Translate anything to English. 1-5 lines</h2>
-        <form>
+        <h1>AI-Movie-Recs</h1>
+        <h2>Tell us what you like 📽</h2>
+        <form id="movie-recs-form">
           <input
             type="text"
             placeholder="Write here"
@@ -25,13 +26,7 @@
         </form>
         </header>
         <main>
-        <div class="translation">
-          "They hadn’t known each other for long, but they understood each other
-          intuitively."
-          <br />
-          "..."
-          <br />
-          "..."
+        <div class="movieRecs" id="movieRecs">
         </div>
       </main>
       <footer>
@@ -50,5 +45,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
