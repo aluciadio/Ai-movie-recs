@@ -17,11 +17,15 @@ function getRecs(event) {
   let prompt = `User instructions: ${instructionsInput.value}`;
   let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  axios.get(url).then(movieRecs);
+  let movieRecs = document.querySelector("#movieRecs");
+  movieRecs.classList.remove("hidden");
+  movieRecs.innerHTML = "📝Getting your recomendations";
 
   console.log("Thinking");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
+
+  axios.get(url).then(movieRecs);
 }
 
 let movieRecsElement = document.querySelector("#movie-recs-form");
