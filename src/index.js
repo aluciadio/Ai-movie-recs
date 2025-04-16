@@ -18,7 +18,8 @@ function getRecs(event) {
 
   let movieRecsElement = document.querySelector("#movieRecs");
   movieRecsElement.classList.remove("hidden");
-  movieRecsElement.innerHTML = "📝Getting your recomendations";
+  movieRecsElement.innerHTML =
+    "📝Getting your recomendations, <small> 4-5 seconds<small>";
 
   axios.get(url).then(movieRecs);
 }
